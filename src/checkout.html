@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RafCart</title>
+    <!-- css -->
+    <link rel="stylesheet" href="../css/output.css">
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- header -->
+    <header class="py-4 bg-white shadow-md">
+        <div class="container flex items-center justify-between">
+            <!-- logo -->
+            <a href="">
+                <i class="fas fa-shopping-basket text-green-500 text-2xl"></i>
+                <span class="text-lg font-bold text-gray-800">GudGrocery</span>
+            </a>
+            <!-- search bar -->
+            <div class="w-full max-w-xl flex relative text-gray-400">
+                <span class="absolute left-4 text-lg top-3">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </span>
+                <input type="text" placeholder="search"
+                    class="w-full border border-green-700 border-r-0 rounded-l-md pl-12 py-3 pr-3 focus:outline-0">
+                <button class="bg-green-600 border border-green-700 text-white px-8 rounded-r-md">Search</button>
+            </div>
+
+
+            <!-- icon -->
+            <div class="items-center flex space-x-4">
+                <a href="" class="text-center text-green-950 hover:text-green-600 transition relative">
+                    <div class="text-2xl">
+                        <i class="far fa-heart"></i>
+                    </div>
+
+                    <div class="text-xs leading-3">Wishlist</div>
+                    <span
+                        class="absolute right-0 -top-1 bg-green-600 w-5 h-5 rounded-full flex items-center justify-center text-white text-xs">10</span>
+                </a>
+
+                <a href="" class="text-center text-green-950 hover:text-green-600 transition relative">
+                    <div class="text-2xl">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </div>
+
+                    <div class="text-xs leading-3">Cart</div>
+                    <span
+                        class="absolute -right-3 -top-1 bg-green-600 w-5 h-5 rounded-full flex items-center justify-center text-white text-xs">5</span>
+                </a>
+
+                <a href="" class="text-center text-green-950 hover:text-green-600 transition relative">
+                    <div class="text-2xl">
+                        <i class="fa-regular fa-user"></i>
+                    </div>
+
+                    <div class="text-xs leading-3">Account</div>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- end header -->
+
+    <!-- Navbar -->
+    <nav class="bg-green-600 shadow-md py-3 px-6">
+        <div class="flex justify-between items-center">
+
+            <!-- Menu Items -->
+            <div class="space-x-6 text-white">
+                <a href="index.html" class="text-lg hover:text-green-950 hover:underline transition">Home</a>
+                <a href="shop.html" class="text-lg hover:text-green-950 hover:underline transition">Shop</a>
+                <a href="about-us.html" class="text-lg hover:text-green-950 hover:underline transition">About us</a>
+                <a href="#" class="text-lg hover:text-green-950 hover:underline transition">Contact Us</a>
+            </div>
+
+            <div>
+                <p class="text-lg text-white hover:text-green-950 transition">Gudgrocery@gmail.com</p>
+            </div>
+
+        </div>
+    </nav>
+    <!-- End Navbar -->
+
+        <!-- breadcrums -->
+        <div class="container flex py-4 items-start gap-3">
+            <a href="shop.html" class="flex items-center text-green-600 hover:text-green-800">
+                <i class="fas fa-shopping-basket"></i>
+            </a>
+            <span class="text-gray-400">></span>
+            <p class="hover:text-green-800">Checkout</p>
+        </div>
+        <!-- end readcrums -->
+    
+
+        <!-- checkout --> 
+        <div class="max-w-4xl mx-auto py-10 border border-green-800 rounded-md mb-16 mt-10">
+            <h1 class="text-3xl font-bold text-green-700 mb-6 text-center">Grocery Checkout</h1>
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- Form Checkout -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-semibold mb-4">Billing Details</h2>
+                    <form class="space-y-4">
+                        <div class="grid grid-cols-2 gap-4">
+                            <input type="text" placeholder="First Name" class="w-full p-2 border rounded">
+                            <input type="text" placeholder="Last Name" class="w-full p-2 border rounded">
+                        </div>
+                        <input type="text" placeholder="Company Name (Optional)" class="w-full p-2 border rounded">
+                        <input type="text" placeholder="Country/Region" class="w-full p-2 border rounded">
+                        <input type="text" placeholder="Street Address" class="w-full p-2 border rounded">
+                        <input type="text" placeholder="Town/City" class="w-full p-2 border rounded">
+                        <input type="text" placeholder="Zip Code" class="w-full p-2 border rounded">
+                        <input type="text" placeholder="Phone Number" class="w-full p-2 border rounded">
+                        <div>
+                            <input type="checkbox" id="terms" class="mr-2 text-green-950 focus:ring-0">
+                            <label for="terms" class="text-gray-700">Agree to terms & conditions</label>
+                        </div>
+                    </form>
+                </div>
+                
+                <!-- Order Summary -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-semibold mb-4">Order Summary</h2>
+                    <div class="space-y-4 border-b pb-4">
+                        <div class="flex justify-between">
+                            <span>Fresh Apples x2</span>
+                            <span>$4.00</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Organic Bananas x3</span>
+                            <span>$3.50</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Carrots x1</span>
+                            <span>$2.00</span>
+                        </div>
+                    </div>
+                    <div class="mt-4 space-y-2">
+                        <div class="flex justify-between font-semibold">
+                            <span>Subtotal</span>
+                            <span>$9.50</span>
+                        </div>
+                        <div class="flex justify-between text-green-600">
+                            <span>Shipping</span>
+                            <span>FREE</span>
+                        </div>
+                        <div class="flex justify-between font-bold text-lg">
+                            <span>Total</span>
+                            <span>$9.50</span>
+                        </div>
+                    </div>
+                    <button class="mt-4 w-full border border-orange-400 bg-orange-400 text-white p-3 rounded-lg hover:bg-transparent hover:text-orange-400 hover:scale-105 transition">Checkout</button>
+                </div>
+            </div>
+        </div>
+        <!-- end checkout -->
+
+
+   <!-- footer -->
+   <footer class="bg-green-600 text-white py-12">
+    <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
+      <!-- Company Info -->
+      <div>
+        <img src="../assets/new-logo (1).svg" class="bg-white rounded-full" alt="">
+        <p class="text-gray-300 mt-4 leading-relaxed">Belanja kebutuhan sehari-hari dengan mudah dan cepat, langsung diantar ke rumah Anda.</p>
+      </div>
+      
+      <!-- Quick Links -->
+      <div>
+        <h2 class="text-lg font-semibold">Navigasi</h2>
+        <ul class="mt-4 space-y-3">
+          <li><a href="#" class="text-gray-300 hover:text-white transition duration-300">Home</a></li>
+          <li><a href="#" class="text-gray-300 hover:text-white transition duration-300">Shop</a></li>
+          <li><a href="#" class="text-gray-300 hover:text-white transition duration-300">About us</a></li>
+          <li><a href="#" class="text-gray-300 hover:text-white transition duration-300">Contact us</a></li>
+        </ul>
+      </div>
+      
+      <!-- Customer Support -->
+      <div>
+        <h2 class="text-lg font-semibold">Layanan Pelanggan</h2>
+        <ul class="mt-4 space-y-3">
+          <li><a href="#" class="text-gray-300 hover:text-white transition duration-300">FAQ</a></li>
+          <li><a href="#" class="text-gray-300 hover:text-white transition duration-300">Kebijakan Privasi</a></li>
+          <li><a href="#" class="text-gray-300 hover:text-white transition duration-300">Syarat & Ketentuan</a></li>
+          <li><a href="#" class="text-gray-300 hover:text-white transition duration-300">Hubungi Kami</a></li>
+        </ul>
+      </div>
+      
+      <!-- Newsletter & Social Media -->
+      <div>
+        <h2 class="text-lg font-semibold">Dapatkan Promo Terbaru</h2>
+        <form class="mt-4">
+            <input type="email" placeholder="Masukkan email Anda" class="w-full px-4 py-3 bg-white text-gray-800 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 shadow-sm transition duration-300">
+          <button type="submit" class="mt-2 w-full bg-yellow-500 hover:bg-yellow-600 text-white font-semibold py-2 rounded-md transition duration-300">Berlangganan</button>
+        </form>
+        <div class="mt-4 flex space-x-4">
+          <a href="#" class="text-gray-300 hover:text-white transition duration-300 text-xl"><i class="fab fa-facebook"></i></a>
+          <a href="#" class="text-gray-300 hover:text-white transition duration-300 text-xl"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="text-gray-300 hover:text-white transition duration-300 text-xl"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="text-gray-300 hover:text-white transition duration-300 text-xl"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="border-t border-green-700 mt-10 pt-6 text-center text-gray-300 text-sm">© 2025 GudGrocery. by Diva.</div>
+  </footer>
+  <!-- end footer -->
+</body>
+
+</html>

@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RafCart</title>
+    <!-- css -->
+    <link rel="stylesheet" href="../css/output.css">
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- header -->
+    <header class="py-4 bg-white shadow-md">
+        <div class="container flex items-center justify-between">
+            <!-- logo -->
+            <a href="">
+                <i class="fas fa-shopping-basket text-green-500 text-2xl"></i>
+                <span class="text-lg font-bold text-gray-800">GudGrocery</span>
+            </a>
+            <!-- search bar -->
+            <div class="w-full max-w-xl flex relative text-gray-400">
+                <span class="absolute left-4 text-lg top-3">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </span>
+                <input type="text" placeholder="search"
+                    class="w-full border border-green-700 border-r-0 rounded-l-md pl-12 py-3 pr-3 focus:outline-0">
+                <button class="bg-green-600 border border-green-700 text-white px-8 rounded-r-md">Search</button>
+            </div>
+
+
+            <!-- icon -->
+            <div class="items-center flex space-x-4">
+                <a href="" class="text-center text-green-950 hover:text-green-600 transition relative">
+                    <div class="text-2xl">
+                        <i class="far fa-heart"></i>
+                    </div>
+
+                    <div class="text-xs leading-3">Wishlist</div>
+                    <span
+                        class="absolute right-0 -top-1 bg-green-600 w-5 h-5 rounded-full flex items-center justify-center text-white text-xs">10</span>
+                </a>
+
+                <a href="" class="text-center text-green-950 hover:text-green-600 transition relative">
+                    <div class="text-2xl">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </div>
+
+                    <div class="text-xs leading-3">Cart</div>
+                    <span
+                        class="absolute -right-3 -top-1 bg-green-600 w-5 h-5 rounded-full flex items-center justify-center text-white text-xs">5</span>
+                </a>
+
+                <a href="" class="text-center text-green-950 hover:text-green-600 transition relative">
+                    <div class="text-2xl">
+                        <i class="fa-regular fa-user"></i>
+                    </div>
+
+                    <div class="text-xs leading-3">Account</div>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- end header -->
+
+    <!-- Navbar -->
+    <nav class="bg-green-600 shadow-md py-3 px-6">
+        <div class="flex justify-between items-center">
+
+            <!-- Menu Items -->
+            <div class="space-x-6 text-white">
+                <a href="#" class="text-lg hover:text-green-950 hover:underline transition">Home</a>
+                <a href="shop.html" class="text-lg hover:text-green-950 hover:underline transition">Shop</a>
+                <a href="about-us.html" class="text-lg hover:text-green-950 hover:underline transition">About us</a>
+                <a href="#" class="text-lg hover:text-green-950 hover:underline transition">Contact Us</a>
+            </div>
+
+            <div>
+                <p class="text-lg text-white hover:text-green-950 transition">Gudgrocery@gmail.com</p>
+            </div>
+
+        </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- product view -->
+    <div class="container grid grid-cols-2 gap-6 pt-10">
+        <!-- image of product -->
+        <div>
+            <img src="../assets/banana.svg" alt="" class="w-full">
+
+            <div class="grid grid-cols-5 gap-4 mt-4">
+                <img src="../assets/mango.svg" alt="" class="w-full cursor-pointer border border-primary">
+                <img src="../assets/naga.svg" alt="" class="w-full cursor-pointer border ">
+                <img src="../assets/Apple.svg" alt="" class="w-full cursor-pointer border ">
+                <img src="../assets/nuts.svg" alt="" class="w-full cursor-pointer border ">
+                <img src="../assets/orange.svg" alt="" class="w-full cursor-pointer border ">
+            </div>
+        </div>
+        <!-- end image of product -->
+
+        <!-- product view content -->
+        <div>
+            <h class="text-3xl font-medium uppercase">Banana</h>
+
+            <div class="flex items-center mb-4">
+                <div class="text-yellow-400 flex gap-1">
+                    <span>
+                        <i class="fa-solid fa-star"></i>
+                    </span>
+                    <span>
+                        <i class="fa-solid fa-star"></i>
+                    </span>
+                    <span>
+                        <i class="fa-solid fa-star"></i>
+                    </span>
+                    <span>
+                        <i class="fa-solid fa-star"></i>
+                    </span>
+                    <span>
+                        <i class="fa-solid fa-star"></i>
+                    </span>
+                    <span>
+                        <i class="fa-solid fa-star"></i>
+                    </span>
+                </div>
+
+                <div class="text-sm text-gray-500 ml-3">
+                    (150 review)
+                </div>
+            </div>
+
+            <div class="space-y-2">
+                <p class="text-gray-800 font-semibold space-x-2">
+                    <span>Avalaiblity:</span>
+                    <span class="text-green-500">In stock</span>
+                </p>
+
+                <p class="text-gray-800 font-semibold space-x-2">
+                    <span>Brand:</span>
+                    <span class="text-gray-600">Bu Nunun</span>
+                </p>
+
+                <p class="text-gray-800 font-semibold space-x-2">
+                    <span>Category:</span>
+                    <span class="text-gray-600">Fruits</span>
+                </p>
+
+                <p class="text-gray-800 font-semibold space-x-2">
+                    <span>SKU:</span>
+                    <span class="text-gray-600">10896</span>
+                </p>
+            </div>
+
+            <!-- price -->
+            <div class="flex items-baseline mb-1 space-x-2 font-roboto mt-4">
+                <p class="text-2xl text-primary font-semibold">$67.000</p>
+                <p class="text-base text-gray-400 line-through">$100.000</p>
+            </div>
+
+            <!-- desc -->
+            <div>
+                <p class="mt-6 text-gray-600">Pisang merupakan buah yang dapat melancarkan pencernaan manusia, jadi ayo makan pisang</p>
+            </div>
+
+            <!-- quantity -->
+            <div class="mt-3">
+                <h3 class="text-sm text-gray-600 uppercase font-semibold mb-2">Quantity</h3>
+
+                <div class="flex border border-gray-300 divide-x divide-gray-300 w-max">
+                    <div class="h-6 w-6 text-sm flex items-center justify-center cursor-pointer select-none">-</div>
+                    <div class="h-6 w-6 text-sm flex items-center justify-center">100</div>
+                    <div class="h-6 w-6 text-sm flex items-center justify-center cursor-pointer select-none">+</div>
+                </div>
+            </div>
+            <!-- end quantity -->
+
+            <!-- cart button -->
+            <div class="flex mt-6 gap-3 border-b border-gray-200 pb-5">
+                <a href="checkout.html" class="bg-orange-400 border border-orange-400 text-white px-8 py-2 font-medium rounded uppercase flex items-center gap-2
+                hover:bg-transparent hover:text-orange-400 transition">
+                    <i class="fa-solid fa-cart-shopping"></i> add to cart
+                </a>
+
+                <a href="#" class="bg-transparent border border-orange-400 text-orange-400 px-8 py-2 font-medium rounded uppercase flex items-center gap-2
+                hover:bg-orange-400 hover:text-white transition">
+                    <i class="fa-solid fa-heart"></i> Wishlist
+                </a>
+
+            </div>
+            <!-- end cart button -->
+
+            <!-- social share -->
+            <div class="flex gap-3 mt-4">
+                <a href="#"
+                    class="text-gray-400 hover:text-gray-500 h-8 w-8 rounded-full border border-gray-300 flex items-center justify-center"><i
+                        class="fa-brands fa-whatsapp"></i></a>
+                <a href="#"
+                    class="text-gray-400 hover:text-gray-500 h-8 w-8 rounded-full border border-gray-300 flex items-center justify-center"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="#"
+                    class="text-gray-400 hover:text-gray-500 h-8 w-8 rounded-full border border-gray-300 flex items-center justify-center"><i
+                        class="fa-brands fa-tiktok"></i></a>
+            </div>
+            <!-- end social share -->
+
+        </div>
+        <!-- end product view content -->
+
+
+    </div>
+    <!-- end product view -->
+
+    <!-- detail pruduct -->
+    <div class="container pb-16 pt-10">
+        <h3 class="border-b border-gray-200 font-roboto text-gray-800 pb-3 font-medium">Product Details</h3>
+
+        <!-- desc -->
+        <div class="w-3/5 pt-6">
+            <div class="space-y-3 text-gray-600">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat provident optio quisquam facere? Ut
+                    asperiores ipsum fugiat, culpa, similique aut quia eveniet, natus pariatur et nostrum cumque odit
+                    quisquam quas?
+
+                </p>
+
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam tempore vero, ratione iure odio libero
+                    praesentium eos molestias architecto minus.
+                </p>
+
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos molestias nesciunt quisquam,
+                    id cumque dolore laudantium aliquid, exercitationem iusto ab vero, consectetur fugiat.
+                </p>
+            </div>
+
+            <!-- table -->
+            <table class="table-auto border-collapse w-full text-left text-gray-600 text-sm mt-6">
+                <tr>
+                    <th class="border border-gray-300 py-2 px-4 w-40 font-medium">Nama buah</th>
+                    <td class="border border-gray-300 py-2 px-4">Pisang kuning</td>
+                </tr>
+
+                <tr>
+                    <th class="border border-gray-300 py-2 px-4 w-40 font-medium">Keterangan buah</th>
+                    <td class="border border-gray-300 py-2 px-4">Alhamdulillah buah segar</td>
+                </tr>
+            </table>
+            <!-- end table -->
+        </div>
+    </div>
+    <!-- end detail pruduct -->
+
+    <!-- prduct wrapper -->
+    <div class="container pb-16">
+        <h2 class="text-4xl font-bold text-center text-green-950 mb-16">Related</h2>
+        <!-- product grid -->
+        <div class="grid grid-cols-4 gap-6">
+
+            <!-- single product -->
+            <div class="bg-white shadow rounded group">
+                <!-- image -->
+                <div class="relative cursor-pointer bg-white rounded-lg overflow-hidden transform transition duration-300 ease-in-out">
+                    <img src="../assets/banana.svg" alt="" class="w-full">
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                        <a href="view.html" class="text-white text-lg w-9 h-9 bg-green-600 rounded-full flex justify-center items-center
+                    hover:bg-green-950 transition">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                        <a href="#" class="text-white text-lg w-9 h-9 bg-green-600 rounded-full flex justify-center items-center
+                    hover:bg-green-950 transition">
+                            <i class="fa-regular fa-heart"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- end image -->
+
+                <!-- desc product -->
+                <div class="pt-4 pb-3 px-4">
+                    <!-- name product -->
+                    <h3 class="text-2xl font-semibold text-green-950 hover:opacity-70 cursor-pointer">Banana</h3>
+
+                    <!-- price -->
+                    <div class="flex items-center space-x-3 mt-2">
+                        <span class="text-xl font-bold text-orange-500">$25.000</span>
+                        <span class="text-sm text-gray-500 line-through">$35.000</span>
+                    </div>
+                    <!-- end price -->
+
+                    <!-- rating -->
+                    <div class="flex items-center">
+                        <!-- rating bintang -->
+                        <div class="flex gap-1 text-sm text-yellow-400">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <!-- rating angka -->
+                        <div class="text-xs text-gray-500 ml-3">(150)</div>
+                    </div>
+                </div>
+                <!-- end desc product -->
+
+                <!-- button buy -->
+                <a href="#"
+                class="mt-6 block w-full py-2 bg-orange-400 text-white text-center rounded-lg font-semibold transition-all duration-300 transform border border-orange-400 hover:bg-transparent hover:text-orange-400 hover:shadow-xl hover:rotate-2 hover:scale-105 hover:translate-y-1">
+                Add to cart
+             </a>
+            </div>
+            <!-- end single product -->
+         
+
+            <!-- single product -->
+            <div class="bg-white shadow rounded group">
+                <!-- image -->
+                <div class="relative cursor-pointer bg-white rounded-lg overflow-hidden transform transition duration-300 ease-in-out">
+                    <img src="../assets/naga.svg" alt="" class="w-full">
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                        <a href="view.html" class="text-white text-lg w-9 h-9 bg-green-600 rounded-full flex justify-center items-center
+                    hover:bg-green-950 transition">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                        <a href="#" class="text-white text-lg w-9 h-9 bg-green-600 rounded-full flex justify-center items-center
+                    hover:bg-green-950 transition">
+                            <i class="fa-regular fa-heart"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- end image -->
+
+                <!-- desc product -->
+                <div class="pt-4 pb-3 px-4">
+                    <!-- name product -->
+                    <h3 class="text-2xl font-semibold text-green-950 hover:opacity-70 cursor-pointer">Dragon Fruit</h3>
+
+                    <!-- price -->
+                    <div class="flex items-center space-x-3 mt-2">
+                        <span class="text-xl font-bold text-orange-500">$25.000</span>
+                        <span class="text-sm text-gray-500 line-through">$35.000</span>
+                    </div>
+                    <!-- end price -->
+
+                    <!-- rating -->
+                    <div class="flex items-center">
+                        <!-- rating bintang -->
+                        <div class="flex gap-1 text-sm text-yellow-400">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <!-- rating angka -->
+                        <div class="text-xs text-gray-500 ml-3">(150)</div>
+                    </div>
+                </div>
+                <!-- end desc product -->
+
+                <!-- button buy -->
+                <a href="#"
+                class="mt-6 block w-full py-2 bg-orange-400 text-white text-center rounded-lg font-semibold transition-all duration-300 transform border border-orange-400 hover:bg-transparent hover:text-orange-400 hover:shadow-xl hover:rotate-2 hover:scale-105 hover:translate-y-1">
+                Add to cart
+             </a>
+            </div>
+            <!-- end single product -->
+         
+
+            <!-- single product -->
+            <div class="bg-white shadow rounded group">
+                <!-- image -->
+                <div class="relative cursor-pointer bg-white rounded-lg overflow-hidden transform transition duration-300 ease-in-out">
+                    <img src="../assets/kiwkiwi.svg" alt="" class="w-full">
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                        <a href="view.html" class="text-white text-lg w-9 h-9 bg-green-600 rounded-full flex justify-center items-center
+                    hover:bg-green-950 transition">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                        <a href="#" class="text-white text-lg w-9 h-9 bg-green-600 rounded-full flex justify-center items-center
+                    hover:bg-green-950 transition">
+                            <i class="fa-regular fa-heart"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- end image -->
+
+                <!-- desc product -->
+                <div class="pt-4 pb-3 px-4">
+                    <!-- name product -->
+                    <h3 class="text-2xl font-semibold text-green-950 hover:opacity-70 cursor-pointer">Kiwi</h3>
+
+                    <!-- price -->
+                    <div class="flex items-center space-x-3 mt-2">
+                        <span class="text-xl font-bold text-orange-500">$25.000</span>
+                        <span class="text-sm text-gray-500 line-through">$35.000</span>
+                    </div>
+                    <!-- end price -->
+
+                    <!-- rating -->
+                    <div class="flex items-center">
+                        <!-- rating bintang -->
+                        <div class="flex gap-1 text-sm text-yellow-400">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <!-- rating angka -->
+                        <div class="text-xs text-gray-500 ml-3">(150)</div>
+                    </div>
+                </div>
+                <!-- end desc product -->
+
+                <!-- button buy -->
+                <a href="#"
+                class="mt-6 block w-full py-2 bg-orange-400 text-white text-center rounded-lg font-semibold transition-all duration-300 transform border border-orange-400 hover:bg-transparent hover:text-orange-400 hover:shadow-xl hover:rotate-2 hover:scale-105 hover:translate-y-1">
+                Add to cart
+             </a>
+            </div>
+            <!-- end single product -->
+         
+
+            <!-- single product -->
+            <div class="bg-white shadow rounded group">
+                <!-- image -->
+                <div class="relative cursor-pointer bg-white rounded-lg overflow-hidden transform transition duration-300 ease-in-out">
+                    <img src="../assets/nuts.svg" alt="" class="w-full">
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                        <a href="view.html" class="text-white text-lg w-9 h-9 bg-green-600 rounded-full flex justify-center items-center
+                    hover:bg-green-950 transition">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                        <a href="#" class="text-white text-lg w-9 h-9 bg-green-600 rounded-full flex justify-center items-center
+                    hover:bg-green-950 transition">
+                            <i class="fa-regular fa-heart"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- end image -->
+
+                <!-- desc product -->
+                <div class="pt-4 pb-3 px-4">
+                    <!-- name product -->
+                    <h3 class="text-2xl font-semibold text-green-950 hover:opacity-70 cursor-pointer">Peanut</h3>
+
+                    <!-- price -->
+                    <div class="flex items-center space-x-3 mt-2">
+                        <span class="text-xl font-bold text-orange-500">$25.000</span>
+                        <span class="text-sm text-gray-500 line-through">$35.000</span>
+                    </div>
+                    <!-- end price -->
+
+                    <!-- rating -->
+                    <div class="flex items-center">
+                        <!-- rating bintang -->
+                        <div class="flex gap-1 text-sm text-yellow-400">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <!-- rating angka -->
+                        <div class="text-xs text-gray-500 ml-3">(150)</div>
+                    </div>
+                </div>
+                <!-- end desc product -->
+
+                <!-- button buy -->
+                <a href="#"
+                class="mt-6 block w-full py-2 bg-orange-400 text-white text-center rounded-lg font-semibold transition-all duration-300 transform border border-orange-400 hover:bg-transparent hover:text-orange-400 hover:shadow-xl hover:rotate-2 hover:scale-105 hover:translate-y-1">
+                Add to cart
+             </a>
+            </div>
+            <!-- end single product -->
+         
+
+            <!-- single product -->
+            <div class="bg-white shadow rounded group">
+                <!-- image -->
+                <div class="relative cursor-pointer bg-white rounded-lg overflow-hidden transform transition duration-300 ease-in-out">
+                    <img src="../assets/mango.svg" alt="" class="w-full">
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                        <a href="view.html" class="text-white text-lg w-9 h-9 bg-green-600 rounded-full flex justify-center items-center
+                    hover:bg-green-950 transition">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                        <a href="#" class="text-white text-lg w-9 h-9 bg-green-600 rounded-full flex justify-center items-center
+                    hover:bg-green-950 transition">
+                            <i class="fa-regular fa-heart"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- end image -->
+
+                <!-- desc product -->
+                <div class="pt-4 pb-3 px-4">
+                    <!-- name product -->
+                    <h3 class="text-2xl font-semibold text-green-950 hover:opacity-70 cursor-pointer">Mango</h3>
+
+                    <!-- price -->
+                    <div class="flex items-center space-x-3 mt-2">
+                        <span class="text-xl font-bold text-orange-500">$25.000</span>
+                        <span class="text-sm text-gray-500 line-through">$35.000</span>
+                    </div>
+                    <!-- end price -->
+
+                    <!-- rating -->
+                    <div class="flex items-center">
+                        <!-- rating bintang -->
+                        <div class="flex gap-1 text-sm text-yellow-400">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <!-- rating angka -->
+                        <div class="text-xs text-gray-500 ml-3">(150)</div>
+                    </div>
+                </div>
+                <!-- end desc product -->
+
+                <!-- button buy -->
+                <a href="#"
+                class="mt-6 block w-full py-2 bg-orange-400 text-white text-center rounded-lg font-semibold transition-all duration-300 transform border border-orange-400 hover:bg-transparent hover:text-orange-400 hover:shadow-xl hover:rotate-2 hover:scale-105 hover:translate-y-1">
+                Add to cart
+             </a>
+            </div>
+            <!-- end single product -->
+         
+
+            <!-- single product -->
+            <div class="bg-white shadow rounded group">
+                <!-- image -->
+                <div class="relative cursor-pointer bg-white rounded-lg overflow-hidden transform transition duration-300 ease-in-out">
+                    <img src="../assets/Apple.svg" alt="" class="w-full">
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                        <a href="view.html" class="text-white text-lg w-9 h-9 bg-green-600 rounded-full flex justify-center items-center
+                    hover:bg-green-950 transition">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                        <a href="#" class="text-white text-lg w-9 h-9 bg-green-600 rounded-full flex justify-center items-center
+                    hover:bg-green-950 transition">
+                            <i class="fa-regular fa-heart"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- end image -->
+
+                <!-- desc product -->
+                <div class="pt-4 pb-3 px-4">
+                    <!-- name product -->
+                    <h3 class="text-2xl font-semibold text-green-950 hover:opacity-70 cursor-pointer">Apple</h3>
+
+                    <!-- price -->
+                    <div class="flex items-center space-x-3 mt-2">
+                        <span class="text-xl font-bold text-orange-500">$25.000</span>
+                        <span class="text-sm text-gray-500 line-through">$35.000</span>
+                    </div>
+                    <!-- end price -->
+
+                    <!-- rating -->
+                    <div class="flex items-center">
+                        <!-- rating bintang -->
+                        <div class="flex gap-1 text-sm text-yellow-400">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <!-- rating angka -->
+                        <div class="text-xs text-gray-500 ml-3">(150)</div>
+                    </div>
+                </div>
+                <!-- end desc product -->
+
+                <!-- button buy -->
+                <a href="#"
+                class="mt-6 block w-full py-2 bg-orange-400 text-white text-center rounded-lg font-semibold transition-all duration-300 transform border border-orange-400 hover:bg-transparent hover:text-orange-400 hover:shadow-xl hover:rotate-2 hover:scale-105 hover:translate-y-1">
+                Add to cart
+             </a>
+            </div>
+            <!-- end single product -->
+         
+
+            <!-- single product -->
+            <div class="bg-white shadow rounded group">
+                <!-- image -->
+                <div class="relative cursor-pointer bg-white rounded-lg overflow-hidden transform transition duration-300 ease-in-out">
+                    <img src="../assets/orange.svg" alt="" class="w-full">
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                        <a href="view.html" class="text-white text-lg w-9 h-9 bg-green-600 rounded-full flex justify-center items-center
+                    hover:bg-green-950 transition">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                        <a href="#" class="text-white text-lg w-9 h-9 bg-green-600 rounded-full flex justify-center items-center
+                    hover:bg-green-950 transition">
+                            <i class="fa-regular fa-heart"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- end image -->
+
+                <!-- desc product -->
+                <div class="pt-4 pb-3 px-4">
+                    <!-- name product -->
+                    <h3 class="text-2xl font-semibold text-green-950 hover:opacity-70 cursor-pointer">Orange</h3>
+
+                    <!-- price -->
+                    <div class="flex items-center space-x-3 mt-2">
+                        <span class="text-xl font-bold text-orange-500">$25.000</span>
+                        <span class="text-sm text-gray-500 line-through">$35.000</span>
+                    </div>
+                    <!-- end price -->
+
+                    <!-- rating -->
+                    <div class="flex items-center">
+                        <!-- rating bintang -->
+                        <div class="flex gap-1 text-sm text-yellow-400">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <!-- rating angka -->
+                        <div class="text-xs text-gray-500 ml-3">(150)</div>
+                    </div>
+                </div>
+                <!-- end desc product -->
+
+                <!-- button buy -->
+                <a href="#"
+                class="mt-6 block w-full py-2 bg-orange-400 text-white text-center rounded-lg font-semibold transition-all duration-300 transform border border-orange-400 hover:bg-transparent hover:text-orange-400 hover:shadow-xl hover:rotate-2 hover:scale-105 hover:translate-y-1">
+                Add to cart
+             </a>
+            </div>
+            <!-- end single product -->
+         
+          
+        </div>
+        <!-- end product grid -->
+    </div>
+    <!-- end product wrapper -->
+
+   <!-- footer -->
+   <footer class="bg-green-600 text-white py-12">
+    <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
+      <!-- Company Info -->
+      <div>
+        <img src="../assets/new-logo (1).svg" class="bg-white rounded-full" alt="">
+        <p class="text-gray-300 mt-4 leading-relaxed">Belanja kebutuhan sehari-hari dengan mudah dan cepat, langsung diantar ke rumah Anda.</p>
+      </div>
+      
+      <!-- Quick Links -->
+      <div>
+        <h2 class="text-lg font-semibold">Navigasi</h2>
+        <ul class="mt-4 space-y-3">
+          <li><a href="#" class="text-gray-300 hover:text-white transition duration-300">Home</a></li>
+          <li><a href="#" class="text-gray-300 hover:text-white transition duration-300">Shop</a></li>
+          <li><a href="#" class="text-gray-300 hover:text-white transition duration-300">About us</a></li>
+          <li><a href="#" class="text-gray-300 hover:text-white transition duration-300">Contact us</a></li>
+        </ul>
+      </div>
+      
+      <!-- Customer Support -->
+      <div>
+        <h2 class="text-lg font-semibold">Layanan Pelanggan</h2>
+        <ul class="mt-4 space-y-3">
+          <li><a href="#" class="text-gray-300 hover:text-white transition duration-300">FAQ</a></li>
+          <li><a href="#" class="text-gray-300 hover:text-white transition duration-300">Kebijakan Privasi</a></li>
+          <li><a href="#" class="text-gray-300 hover:text-white transition duration-300">Syarat & Ketentuan</a></li>
+          <li><a href="#" class="text-gray-300 hover:text-white transition duration-300">Hubungi Kami</a></li>
+        </ul>
+      </div>
+      
+      <!-- Newsletter & Social Media -->
+      <div>
+        <h2 class="text-lg font-semibold">Dapatkan Promo Terbaru</h2>
+        <form class="mt-4">
+            <input type="email" placeholder="Masukkan email Anda" class="w-full px-4 py-3 bg-white text-gray-800 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 shadow-sm transition duration-300">
+          <button type="submit" class="mt-2 w-full bg-yellow-500 hover:bg-yellow-600 text-white font-semibold py-2 rounded-md transition duration-300">Berlangganan</button>
+        </form>
+        <div class="mt-4 flex space-x-4">
+          <a href="#" class="text-gray-300 hover:text-white transition duration-300 text-xl"><i class="fab fa-facebook"></i></a>
+          <a href="#" class="text-gray-300 hover:text-white transition duration-300 text-xl"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="text-gray-300 hover:text-white transition duration-300 text-xl"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="text-gray-300 hover:text-white transition duration-300 text-xl"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="border-t border-green-700 mt-10 pt-6 text-center text-gray-300 text-sm">© 2025 GudGrocery. by Diva.</div>
+  </footer>
+  <!-- end footer -->
+
+</body>
+</html>
